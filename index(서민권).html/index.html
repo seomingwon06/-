@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Seomin</title>
+    <meta
+      name="description"
+      content="모던한 감성의 웹 포트폴리오 사이트 예시입니다."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav-wrap">
+        <a class="logo" href="#home" aria-label="Astra Solutions 홈">
+          <img
+            src="C:/Users/DCU/.cursor/projects/c-Users-DCU-Desktop-index-html/assets/c__Users_DCU_AppData_Roaming_Cursor_User_workspaceStorage_84d47e83210ad545a9929b1aa9c674d9_images_Gemini_Generated_Image_vu0mujvu0mujvu0m-90a8c367-db81-434c-bdcb-390d7ad60acb.png"
+            alt="Astra Solutions 로고"
+          />
+        </a>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="테마 변경">
+          <span>🌙</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero container section reveal">
+        <p class="badge">Frontend Portfolio</p>
+        <h1>포트폴리오</h1>
+        <p class="hero-desc">
+          사용자 경험을 중심으로, 빠르고 감각적인 웹 인터페이스를 만드는 프론트엔드
+          개발자입니다.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">프로젝트 보기</a>
+          <a class="btn ghost" href="#contact">협업 문의</a>
+        </div>
+      </section>
+
+      <section id="about" class="container section reveal">
+        <h2>About Me</h2>
+        <div class="card">
+          <p>
+            디자인과 개발의 경계를 넘나들며, 직관적이고 유지보수 가능한 인터페이스를
+            구현합니다. React 기반 SPA부터 정적 랜딩 페이지까지 다양한 프로젝트를
+            경험했습니다.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="container section reveal">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <article class="card">HTML5 / Semantic Markup</article>
+          <article class="card">CSS3 / SCSS / Responsive</article>
+          <article class="card">JavaScript (ES6+)</article>
+          <article class="card">React / Next.js</article>
+          <article class="card">Git / GitHub / 협업</article>
+          <article class="card">Figma / UI Prototyping</article>
+        </div>
+      </section>
+
+      <section id="projects" class="container section reveal">
+        <div class="projects-head">
+          <h2>Projects</h2>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">전체</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="app">App</button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <article class="project card" data-category="web">
+            <h3>Brand Landing Page</h3>
+            <p>브랜드 감성 전달을 위한 반응형 랜딩 페이지 제작.</p>
+            <a href="#" aria-label="프로젝트 상세 보기">자세히 보기 →</a>
+          </article>
+          <article class="project card" data-category="app">
+            <h3>Task Manager UI</h3>
+            <p>생산성 앱 대시보드 UI/UX 설계 및 프론트 구현.</p>
+            <a href="#" aria-label="프로젝트 상세 보기">자세히 보기 →</a>
+          </article>
+          <article class="project card" data-category="web">
+            <h3>Portfolio Redesign</h3>
+            <p>개인 포트폴리오 리뉴얼 및 성능 최적화 진행.</p>
+            <a href="#" aria-label="프로젝트 상세 보기">자세히 보기 →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="container section reveal">
+        <h2>Contact</h2>
+        <div class="card contact-card">
+          <p>프로젝트 의뢰 및 협업 제안은 아래 메일로 연락 주세요.</p>
+          <a class="mail" href="mailto:seomingwon06@gmail.com">seomingwon06@gmail.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Seomin Kwon. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <aside id="minimap" aria-label="플레이어 미니맵">
+      <p class="minimap-title">PLAYER MINIMAP</p>
+      <div id="minimapDots" class="minimap-dots"></div>
+      <p id="minimapInfo" class="minimap-info">플레이어: P1 | 점수: 0 | 요소: 0</p>
+      <p class="minimap-help">조작: 방향키/WASD | 크기: +/- | 리셋: R</p>
+    </aside>
+    <div id="playerLayer" aria-hidden="true"></div>
+    <div id="foodLayer" aria-hidden="true"></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
